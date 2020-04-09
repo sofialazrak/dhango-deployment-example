@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_custom_tags %}
+{% block body_block%}
+    <h1>Welcome to index</h1>
+
+    <h2>{{text|cut_me:'hello'}}
+    <h2>{{number|add:"99"}}</h2>
+{% endblock %}
